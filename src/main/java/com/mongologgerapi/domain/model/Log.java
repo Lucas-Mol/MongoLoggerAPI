@@ -21,7 +21,7 @@ public abstract class Log {
     @Id
     private String id;
     private LocalDateTime timestamp;
-    private String action;
+    private String method;
     private boolean success;
     private String message;
 

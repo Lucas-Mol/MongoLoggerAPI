@@ -21,7 +21,7 @@ public class Post extends Log {
 
     public Post(PostInputDTO postDTO) {
         setTimestamp(LocalDateTime.now());
-        setAction(postDTO.action());
+        setMethod(postDTO.method());
         setSuccess(postDTO.success());
         setMessage(postDTO.message());
         this.userId = postDTO.userId();

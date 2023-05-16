@@ -1,7 +1,7 @@
 package com.mongologgerapi.domain.dto.input;
 
 public record PostInputDTO(
-        String action,
+        String method,
         boolean success,
         String message,
         Long userId,

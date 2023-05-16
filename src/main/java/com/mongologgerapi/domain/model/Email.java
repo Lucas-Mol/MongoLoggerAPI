@@ -22,7 +22,7 @@ public class Email extends Log {
 
     public Email(EmailInputDTO emailDTO) {
         setTimestamp(LocalDateTime.now());
-        setAction(emailDTO.action());
+        setMethod(emailDTO.method());
         setSuccess(emailDTO.success());
         setMessage(emailDTO.message());
         this.userId = emailDTO.userId();
