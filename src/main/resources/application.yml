@@ -1,0 +1,16 @@
+spring:
+  data:
+    mongodb:
+      uri: ${MONGO_LOGGER_DB_URI:mongodb://localhost:27017}/MongoLogger
+      username:
+      password:
+
+env:
+  var:
+    username:
+    password:
+
+api:
+  security:
+    token:
+      secret:
