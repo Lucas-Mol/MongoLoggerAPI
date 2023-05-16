@@ -24,5 +24,6 @@ public abstract class Log {
     private String method;
     private boolean success;
     private String message;
+    private Long userId;
 
 }

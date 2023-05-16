@@ -16,7 +16,6 @@ import java.time.LocalDateTime;
 @TypeAlias("user")
 public class User extends Log{
 
-    private Long userId;
     private String ipAddress;
 
     public User(UserInputDTO userDTO) {
@@ -24,7 +23,7 @@ public class User extends Log{
         setMethod(userDTO.method());
         setSuccess(userDTO.success());
         setMessage(userDTO.message());
-        this.userId = userDTO.userId();
+        setUserId(userDTO.userId());
         this.ipAddress = userDTO.ipAddress();
     }
 }

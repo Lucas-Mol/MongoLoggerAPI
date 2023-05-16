@@ -16,7 +16,6 @@ import java.time.LocalDateTime;
 @TypeAlias("post")
 public class Post extends Log {
 
-    private Long userId;
     private Long postId;
 
     public Post(PostInputDTO postDTO) {
@@ -24,7 +23,7 @@ public class Post extends Log {
         setMethod(postDTO.method());
         setSuccess(postDTO.success());
         setMessage(postDTO.message());
-        this.userId = postDTO.userId();
+        setUserId(postDTO.userId());
         this.postId = postDTO.postId();
     }
 }

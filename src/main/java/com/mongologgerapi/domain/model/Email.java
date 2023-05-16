@@ -16,7 +16,6 @@ import java.time.LocalDateTime;
 @TypeAlias("email")
 public class Email extends Log {
 
-    private Long userId;
     private String sender;
     private String recipient;
 
@@ -25,7 +24,7 @@ public class Email extends Log {
         setMethod(emailDTO.method());
         setSuccess(emailDTO.success());
         setMessage(emailDTO.message());
-        this.userId = emailDTO.userId();
+        setUserId(emailDTO.userId());
         this.sender = emailDTO.sender();
         this.recipient = emailDTO.recipient();
     }
