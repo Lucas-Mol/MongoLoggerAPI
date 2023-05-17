@@ -1,6 +1,6 @@
 # MongoLoggerAPI
 A Rest API Logger using Spring Boot and MongoDB
-## 
+
 ## Intro
 
 The MongoLoggerAPI is a RESTful API to receive and return logs. It has been thought as a microservice to centralize a logger among a several another applications. Therefore, in a microservices architecture, the MongoLoggerAPI can be used to access all logs from all services.
