@@ -7,6 +7,7 @@ import com.mongologgerapi.domain.model.User;
 import com.mongologgerapi.services.PostLoggerService;
 import com.mongologgerapi.services.UriBuilderService;
 import com.mongologgerapi.services.UserLoggerService;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.annotation.Nullable;
 import jakarta.validation.constraints.Pattern;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +24,7 @@ import java.net.URI;
 @RestController
 @RequestMapping("/users")
 @Validated
+@SecurityRequirement(name = "bearer-key")
 public class UserController {
 
     @Autowired

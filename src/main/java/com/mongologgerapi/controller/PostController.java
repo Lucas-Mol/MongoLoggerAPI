@@ -4,6 +4,7 @@ import com.mongologgerapi.domain.dto.input.PostInputDTO;
 import com.mongologgerapi.domain.model.Post;
 import com.mongologgerapi.services.PostLoggerService;
 import com.mongologgerapi.services.UriBuilderService;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.annotation.Nullable;
 import jakarta.validation.constraints.Pattern;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,7 @@ import java.net.URI;
 @RestController
 @RequestMapping("/posts")
 @Validated
+@SecurityRequirement(name = "bearer-key")
 public class PostController {
 
     @Autowired

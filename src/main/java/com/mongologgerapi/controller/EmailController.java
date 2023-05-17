@@ -4,6 +4,7 @@ import com.mongologgerapi.domain.dto.input.EmailInputDTO;
 import com.mongologgerapi.domain.model.Email;
 import com.mongologgerapi.services.EmailLoggerService;
 import com.mongologgerapi.services.UriBuilderService;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.annotation.Nullable;
 import jakarta.validation.constraints.Pattern;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,7 @@ import java.net.URI;
 @RestController
 @RequestMapping("/emails")
 @Validated
+@SecurityRequirement(name = "bearer-key")
 public class EmailController {
 
     @Autowired

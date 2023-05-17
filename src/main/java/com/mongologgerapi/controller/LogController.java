@@ -5,6 +5,7 @@ import com.mongologgerapi.domain.model.User;
 import com.mongologgerapi.services.LoggerService;
 import com.mongologgerapi.services.UriBuilderService;
 import com.mongologgerapi.services.UserLoggerService;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.annotation.Nullable;
 import jakarta.validation.constraints.FutureOrPresent;
 import jakarta.validation.constraints.Past;
@@ -25,6 +26,7 @@ import java.time.LocalDateTime;
 @RestController
 @RequestMapping("/logs")
 @Validated
+@SecurityRequirement(name = "bearer-key")
 public class LogController {
 
     @Autowired
