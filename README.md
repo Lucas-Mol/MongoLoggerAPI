@@ -16,7 +16,7 @@ It has been chosen the MongoDB as database to improve performance, knowing it'd 
 **Description:** At this example, you can see that GET HTTP URL is sending 3 parameters: user, from and to. In response, you can see it's returning the found logs and a complete pageable info to be consumed by frontend application.
 
 ![image](https://github.com/Lucas-Mol/MongoLoggerAPI/assets/93149981/63bd798d-dc93-4b73-8d85-c69419d9249e) <br/>
-**Description:** At this example, you can see a login POST HTTP URL. It's sending a username and password which can be customized as a environment variable of your application before deployment and return a JWT token to authorize all another resquests.
+**Description:** At this example, you can see a login POST HTTP URL. It's sending a username and password which can be customized as a environment variable of your application before deployment and return a JWT token to authorize all another resquests. <br/> <br/>
 _Note: The user login system was maintened as a default user because in the thought scope and context of its usability, it'll be just used by same person/enterprise_
 
 ## How to run it?
